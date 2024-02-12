@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"math"
 	"slices"
 )
@@ -12,8 +11,6 @@ func BinarySearch(arr []int, v int) (bool, error) {
 	if !sorted {
 		slices.Sort(arr)
 	}
-	fmt.Printf("arr: %d\n", arr)
-	fmt.Println()
 
 	start := 0
 	end := len(arr)
